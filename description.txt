@@ -1,1 +1,2 @@
-WIP
+This mod currently only adds 8 different materials, 2 for each class.
+More is to come.
