@@ -22,7 +22,7 @@ namespace catalyst.Items.Materials.Cores
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IronBar, 3);
+            recipe.AddRecipeGroup("IronBar", 3);
 			recipe.AddIngredient(ItemID.Glowstick, 3);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
