@@ -1,3 +1,4 @@
-displayName = Catalyst
-author = tteeoo
-version = 0.1
+displayName = catalyst
+author = blueberry-jam
+homepage = https://github.com/blueberry-jam/catalyst/
+version = 0.1.1
