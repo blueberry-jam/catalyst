@@ -16,6 +16,7 @@ namespace catalyst.Items.Materials
             item.width = 40;
             item.height = 40;
             item.useTime = 20;
+            item.maxStack = 5;
             item.value = 010000;
             item.rare = 3;
         }

@@ -9,7 +9,7 @@ namespace catalyst.Globals
     {
         public override void NPCLoot(NPC npc)
         {
-            if (Main.rand.Next(100) == 0)
+            if (Main.rand.Next(75) == 0)
             {
                 if (npc.type == NPCID.Skeleton || npc.type == NPCID.AngryBones)
                 {
