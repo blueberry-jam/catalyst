@@ -13,15 +13,15 @@ namespace catalyst.Items.Weapons
 
         public override void SetDefaults()
         {
-            item.damage = 29;
+            item.damage = 12;
             item.melee = true;
-            item.width = 24;
-            item.height = 33;
-            item.useTime = 15;
+            item.width = 28;
+            item.height = 36;
+            item.useTime = 13;
             item.useAnimation = 12;
             item.useStyle = 1;
             item.knockBack = 3;
-            item.value = 30000;
+            item.value = 030000;
             item.rare = 3;
             item.UseSound = SoundID.Item1;
             item.shootSpeed = 10;
@@ -33,6 +33,7 @@ namespace catalyst.Items.Weapons
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("OldFruit"));
+            recipe.AddIngredient(mod.ItemType("MeleeCore"));
             recipe.AddIngredient(ItemID.GoldenKey, 3);
             recipe.AddIngredient(ItemID.PurificationPowder, 10);
             recipe.AddTile(TileID.Anvils);

@@ -11,8 +11,8 @@ namespace catalyst.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.width = 24;
-            projectile.height = 33;
+            projectile.width = 14;
+            projectile.height = 19;
             projectile.aiStyle = 2;
             projectile.friendly = true;
             projectile.penetrate = 2;
@@ -38,6 +38,13 @@ namespace catalyst.Projectiles
                         break;
                 }
             }
+        }
+
+        public override bool OnTileCollide(Vector2 oldVelocity)
+        {
+            Main.PlaySound(3, 443);
+
+            return true;
         }
     }
 }
