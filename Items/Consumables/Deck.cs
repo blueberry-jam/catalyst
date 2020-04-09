@@ -9,7 +9,7 @@ namespace catalyst.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Deck");
+            DisplayName.SetDefault("Deck Box");
             Tooltip.SetDefault("What's in here?\nRight click to open.");
         }
 
@@ -17,7 +17,6 @@ namespace catalyst.Items.Consumables
         {
             item.width = 12;
             item.height = 16;
-            //item.UseSound = SoundID.Item2;
             item.maxStack = 10;
             item.rare = 8;
             item.value = 010000;
@@ -30,20 +29,23 @@ namespace catalyst.Items.Consumables
 
         public override void RightClick(Player player)
         {
-            switch (Main.rand.Next(3))
+            for (int i = 0; i < 4; i++)
             {
-                case 0:
-                    player.QuickSpawnItem(mod.ItemType("CardHeart"));
-                    break;
-                case 1:
-                    player.QuickSpawnItem(mod.ItemType("CardSpade"));
-                    break;
-                case 2:
-                    player.QuickSpawnItem(mod.ItemType("CardClub"));
-                    break;
-                case 3:
-                    player.QuickSpawnItem(mod.ItemType("CardDiamond"));
-                    break;
+                switch (Main.rand.Next(7))
+                {
+                    case 0:
+                        player.QuickSpawnItem(mod.ItemType("CardHeart"));
+                        break;
+                    case 1:
+                        player.QuickSpawnItem(mod.ItemType("CardSpade"));
+                        break;
+                    case 2:
+                        player.QuickSpawnItem(mod.ItemType("CardClub"));
+                        break;
+                    case 3:
+                        player.QuickSpawnItem(mod.ItemType("CardDiamond"));
+                        break;
+                }
             }
         }
     }
