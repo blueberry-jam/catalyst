@@ -1,4 +1,4 @@
 displayName = catalyst
 author = blueberry-jam
 homepage = https://github.com/blueberry-jam/catalyst/
-version = 0.1.2
+version = 0.1.3
