@@ -13,7 +13,7 @@ namespace catalyst.Items.Weapons
 
         public override void SetDefaults()
         {
-            item.damage = 12;
+            item.damage = 10;
             item.melee = true;
             item.width = 28;
             item.height = 36;
