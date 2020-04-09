@@ -11,13 +11,16 @@ namespace catalyst
         {
             if (Main.rand.Next(100) == 0)
             {
-                if (npc.type == NPCID.Skeleton)
+                if (npc.type == NPCID.Skeleton || npc.type == NPCID.AngryBones)
                 {
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("OldFruit"));
                 }
-                if (npc.type == NPCID.AngryBones)
+            }
+            if (Main.rand.Next(150) == 0)
+            {
+                if (npc.type == NPCID.Necromancer || npc.type == NPCID.NecromancerArmored || npc.type == NPCID.DiabolistRed || npc.type == NPCID.DiabolistWhite || npc.type == NPCID.RaggedCaster || npc.type == NPCID.RaggedCasterOpenCoat)
                 {
-                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("OldFruit"));
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Deck"));
                 }
             }
         }
