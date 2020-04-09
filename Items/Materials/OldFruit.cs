@@ -13,8 +13,8 @@ namespace catalyst.Items.Materials
 
         public override void SetDefaults()
         {
-            item.width = 40;
-            item.height = 40;
+            item.width = 30;
+            item.height = 30;
             item.useTime = 20;
             item.maxStack = 5;
             item.value = 010000;
