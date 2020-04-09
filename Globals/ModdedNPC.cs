@@ -9,6 +9,13 @@ namespace catalyst.Globals
     {
         public override void NPCLoot(NPC npc)
         {
+            if (Main.rand.Next(200) == 0)
+            {
+                if (npc.type == NPCID.Zombie)
+                {
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Vermilion"));
+                }
+            }
             if (Main.rand.Next(75) == 0)
             {
                 if (npc.type == NPCID.Skeleton || npc.type == NPCID.AngryBones)
