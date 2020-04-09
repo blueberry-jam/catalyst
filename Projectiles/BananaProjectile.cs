@@ -43,6 +43,10 @@ namespace catalyst.Projectiles
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
             Main.PlaySound(3, 443);
+            if (Main.rand.Next(2) == 0)
+            {
+                Gore.NewGore(projectile.position, projectile.velocity, mod.GetGoreSlot("Gores/Peel"), 1f);
+            }
 
             return true;
         }
